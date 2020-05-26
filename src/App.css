@@ -1,14 +1,93 @@
 .App {
   text-align: center;
-}
-
-.App-content {
   background-color: #282c34;
   min-height: 100vh;
+  padding: 10px;
+}
+.App-content {
+  padding: 0px 0px 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+}
+.App-content img{
+  cursor: pointer;
+}
+
+/* Form search */
+.form-search{
+  width: 300px;
+  margin: auto;
+}
+.form-search input{
+  width: 100%;
+}
+
+/* Loader  */
+.lds-grid {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+}
+
+.lds-grid div {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+  border-radius: 50%;
+  background: #ffffff;
+  animation: lds-grid 1.2s linear infinite;
+}
+
+.lds-grid div:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.lds-grid div:nth-child(2) {
+  animation-delay: -0.4s;
+}
+
+.lds-grid div:nth-child(3) {
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(4) {
+  animation-delay: -0.4s;
+}
+@keyframes lds-grid {
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+}
+
+/* Gif description */
+.container-btn-back{
+  width: 100%;
+  padding-left: 10px;
+  text-align: start;
+}
+.container-btn-back button {
+  cursor: pointer;
+}
+.container-gif-description{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.container-gif-description .container-gif-description__image {
+  padding: 10px;
+}
+.container-gif-description .container-gif-description__desc h1{
+  color: #fff;
+  font-size: 1.2em;
 }
